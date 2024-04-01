@@ -1,0 +1,39 @@
+
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-list>
+            <button mat-list-item (click)="userState()">estado del usuario</button>
+            <!-- Otras opciones de menú... -->
+            <button mat-list-item (click)="logout()">Logout</button>
+        </mat-list>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <div>
+            <app-header>
+            
+            </app-header>
+            <button class="" mat-icon-button (click)="drawer.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+          
+            <h2>Bienvenido a la página de inicio</h2>
+            <swiper-container pagination="false" effect="coverflow" grap-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="200" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false"  >
+                @for (ingredient of images; track ingredient) {
+                <swiper-slide><img [src]="ingredient"></swiper-slide>
+                }
+            </swiper-container>
+
+            <!-- <p>{{ 'HELLO_WORLD' | translate }}</p> -->
+            @if (showState) {
+            <p>Estado del usuario: {{userData.name}}</p>
+            }
+            <!-- <p>Estado del usuario: {{userData.email | usernameFromEmail:userData }}</p> -->
+        </div>
+        
+        <app-footer></app-footer>
+    </div>
+</mat-drawer-container>
+
+
