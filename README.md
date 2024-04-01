@@ -1,5 +1,5 @@
 # Frontend
-## por requerimientos del proyecto de frontend hice una pequeña modificacion en el backend de nestjs esto para que funcionen los cors y el tema de la validacion del usuario por favor hacer pull
+## por requerimientos del proyecto de frontend hice una pequeña modificacion en el backend de nestjs esto para que funcionen los cors y el tema de la validacion del usuario por favor en el backend de nest hacer pull
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
 ## Development server
